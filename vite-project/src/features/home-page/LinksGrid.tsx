@@ -1,16 +1,18 @@
+import { Link } from "react-router-dom";
 import "./LinksGrid.css"
 import calculatorSlika from "images/moj-kalkulator.png"
 import weatherAppIcon from "images/weather-app-icon.png"
 import tictactoeIcon from "images/tictactoe-icon.png"
 
 function LinksGrid() {
+
     const links = [
-        {url: "/calculator", img: calculatorSlika, alt: "Kalkulator"},
-        {url: "/weather", img: weatherAppIcon, alt: "Weather"},
-        {url: "/tictactoe", img: tictactoeIcon, alt: "TicTacToe game"},
-        {url: "/about", img: "react.svg", alt: "About"},
-        {url: "/contact", img: "nema slike trenutno", alt: "Contact"},
-        {url: "/testiranje", alt: "Testiranje"},
+        {element: <Link to="/calculator"><img src={calculatorSlika} alt="Calculator" /></Link>},
+        {element: <Link to="/weather"><img src={weatherAppIcon} alt="Weather" /></Link>},
+        {element: <Link to="/tictactoe"><img src={tictactoeIcon} alt="TicTacToe" /></Link>},
+        {element: <Link to="/about"><img src="react.svg" alt="About" /></Link>},
+        {element: <Link to="/contact"><img src="nema slike trenutno" alt="Contact" /></Link>},
+        {element: <Link to="/testiranje"><img src="nema slike trenutno" alt="Testiranje" /></Link>},
         {},
         {},
     ];
@@ -18,11 +20,11 @@ function LinksGrid() {
     return (
         <div className="links-grid-container">
             <div className="links-grid">
-                {links.map((link, index) => (
-                <a key={index} href={link.url} className="link-item">
-                <img src={link.img} alt={link.alt} />
-                </a>
-            ))}
+                {links.map((item, index) => (
+                    <div key={index} className="link-item">
+                        {item.element}
+                    </div>
+))}
             </div>
         </div>
     );
