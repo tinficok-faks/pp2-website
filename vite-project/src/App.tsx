@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Home from "./features/home-page/Home";
 import MojMenu from "./features/mega-menu/MojMegaMenu";
 import Calculator from "./features/calculator/Calculator";
@@ -14,6 +15,12 @@ function App() {
     <Router>
       <div>
         <MojMenu />
+        {/* <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/calculator">Calculator</Link></li>
+          <li><Link to="/weather">Weather</Link></li>
+        </ul> */}
       </div>
       <Routes>
         <Route path="/" element={<PotpisProvider> <Home /> </PotpisProvider>}/>
@@ -22,7 +29,7 @@ function App() {
         <Route path="/weather" element={<Weather />}/>
         <Route path="/tictactoe" element={<Board />}/>
         <Route path="/contact" element={<PotpisProvider> <Contact /> </PotpisProvider>}/>
-        <Route path="/testiranje" element={<Testiranje />} />
+        <Route path="/testiranje" element={<PotpisProvider> <Testiranje /> </PotpisProvider>} />
       </Routes>
     </Router>
   );
