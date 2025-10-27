@@ -1,0 +1,25 @@
+.recently-visited {
+  background: #e8f4ff;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  max-width: 300px;
+}
+
+.recently-visited ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recently-visited li {
+  margin: 0.5rem 0;
+}
+
+.recently-visited a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.recently-visited a:hover {
+  text-decoration: underline;
+}

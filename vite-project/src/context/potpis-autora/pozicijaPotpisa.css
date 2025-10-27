@@ -1,0 +1,13 @@
+.author-box {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 15px;
+  border-left: 4px solid #4facfe;
+  background-color: #f5f9ff;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #333;
+  max-width: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

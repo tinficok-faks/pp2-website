@@ -1,0 +1,97 @@
+.weather-card {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.weather-card .location {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.weather-card .temp {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.weather-card .feels-like {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.weather-card img {
+  width: 70px;
+  height: 70px;
+  margin: 10px 0;
+}
+
+.weather-card .details {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.forecast-hourly {
+  margin-top: 20px;
+}
+
+.hourly-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.hour {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.hour img {
+  width: 45px;
+  height: 45px;
+  margin: 5px 0;
+}
+
+.forecast-table {
+  margin-top: 30px;
+  background: #f5faff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.forecast-table h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #0078d4;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 200px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #0078d4;
+}
