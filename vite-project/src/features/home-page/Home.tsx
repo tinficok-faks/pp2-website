@@ -1,6 +1,8 @@
 import SearchBar from "../search-bar/SearchBar";
 import LinksGrid from "./LinksGrid";
 import SigniturePosition from "../../context/potpis-autora/pozicijaPotpisa";
+import Auth from "../authentication/auth";
+import LoginButton from "../authentication/auth-login";
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
         <SearchBar />
         <LinksGrid />
         <SigniturePosition />
+        <LoginButton />
+        <Auth />
       </div>
   );
 }
