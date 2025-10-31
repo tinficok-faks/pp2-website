@@ -27,7 +27,6 @@ export default function Auth() {
   const handleLogin = () => netlifyIdentity.open("login");
   const handleSignup = () => netlifyIdentity.open("signup");
   const handleLogout = () => netlifyIdentity.logout();
-  const handleGoogleLogin = () => netlifyIdentity.open('login');
 
   return (
     <div style={{ textAlign: "center", marginTop: "3rem" }}>
@@ -38,7 +37,6 @@ export default function Auth() {
           <button onClick={handleSignup} style={{ marginLeft: "10px" }}>
             Sign Up
           </button>
-          <button onClick={handleGoogleLogin} style={{ marginLeft: "10px" }}>Google sign-in</button>
         </div>
       ) : (
         <div>
