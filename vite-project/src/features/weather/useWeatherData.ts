@@ -6,6 +6,7 @@ import type { SearchResultType } from "./api/search-city-api";
 
 export default function useWeatherData() {
     
+    // https://www.weatherapi.com/
     const API_KEY = "8b846b54ef904e0ea2c74702250110";
 
     const [current_var, setCurrent] = useState<currentWeatherType>();
